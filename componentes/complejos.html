@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body style="padding: 40px;">
+
+    <h1>Dropdown</h1>
+
+    <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+            Mi listado
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#" class="dropdown-item">Item 1</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 2</a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Item 3</a>
+                </li>
+            </ul>
+        </button>
+
+        <h1>Nav</h1>
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Opción 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Opción 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Opción 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    Dropdown
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" class="dropdown-item">Item 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Item 2</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Item 3</a>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+        <br><br>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Opción 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Opción 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Opción 3</a>
+            </li>
+        </ul>
+        <br><br>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link " href="#">Opción 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Opción 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Opción 3</a>
+            </li>
+        </ul>
+        <br><br>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link " href="#">Opción 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Opción 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Opción 3</a>
+            </li>
+        </ul>
+        <h1>Tarjetas</h1>
+
+        <div class="card text-bg-danger">
+            <div class="card-header">
+                <h3>cabecera</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, nesciunt accusantium. Explicabo placeat, quam quos officia impedit corrupti quia distinctio aut aspernatur ad illo sunt fuga laborum dignissimos maiores optio.</p>
+            </div>
+            <div class="card-header">
+                <h3>cabecera</h3>
+            </div>
+            <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, nesciunt accusantium. Explicabo placeat, quam quos officia impedit corrupti quia distinctio aut aspernatur ad illo sunt fuga laborum dignissimos maiores optio.</p>
+            </div>
+            <div class="card-footer">
+                <h3>cabecera</h3>
+            </div>
+        </div>
+        <h1>Modal</h1>
+
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Modal Titulo</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Contenidor
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Abrir Modal</button>
+
+    </div>
+
+    <script src="../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
